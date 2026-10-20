@@ -1,0 +1,27 @@
+# --- ความลับ: ห้ามขึ้น GitHub ---
+.env
+.env.*
+!.env.example
+
+# --- ข้อมูลจาก SEC API และผลลัพธ์ที่สร้างในเครื่อง (ไม่ขึ้น GitHub; สร้างใหม่ด้วย scripts/ ตาม README) ---
+data/*
+!data/.gitkeep
+
+# --- เอกสารอ้างอิงที่ดาวน์โหลดมา (ลิขสิทธิ์/ข้อกำหนดเป็นของเจ้าของเอกสาร) ---
+ref/*
+!ref/.gitkeep
+
+# --- build / cache ---
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+web/node_modules/
+web/dist/
+web/dist-static/
+web/public/data/
+*.log
+
+
+# --- วิดีโอสาธิต: ภาพสถานะ 4K สร้างใหม่ได้ด้วย video/capture2.mjs ---
+video/public/

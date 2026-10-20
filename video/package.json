@@ -1,0 +1,25 @@
+{
+  "name": "tfd-demo-video",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "shots": "node capture.mjs",
+    "render": "remotion render src/index.ts Demo out/demo.mp4 --crf 20",
+    "gif": "remotion render src/index.ts Demo out/demo.gif --every-nth-frame=2 --scale=0.5 --number-of-gif-loops=0"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.536",
+    "@remotion/google-fonts": "^4.0.536",
+    "@remotion/transitions": "^4.0.536",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.536"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "puppeteer-core": "^25.14.0",
+    "typescript": "^7.0.2"
+  }
+}
